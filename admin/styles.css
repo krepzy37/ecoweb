@@ -1,0 +1,231 @@
+/* Alap stílusok */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0fdf4; /* Világos zöld árnyalat */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Fejléc */
+h1 {
+    color: #2c7a7b; /* Mély zöldeskék */
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Navigáció és linkek */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #38a169; /* Élénk zöld */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #38a169;
+}
+
+nav a:hover {
+    background-color: #38a169;
+    color: white;
+}
+
+/* Táblázat stílusok */
+.table-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    border: 1px solid #e2e8f0; /* Világos szürke határ */
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #38a169; /* Élénk zöld */
+    color: white;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f0fdf4; /* Világos zöld */
+}
+
+table tr:hover {
+    background-color: #c6f6d5; /* Halvány zöld kiemelés */
+}
+
+/* Gombok */
+a {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li a{
+    background-color: #38a169;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+a[href*="create"] {
+    background-color: #38a169; /* Élénk zöld */
+    color: white;
+    text-decoration: none;
+}
+
+a[href*="create"]:hover {
+    background-color: #2f855a; /* Sötétebb zöld */
+}
+
+a[href*="edit"] {
+    background-color: #3182ce; /* Kék */
+    color: white;
+    text-decoration: none;
+}
+
+a[href*="edit"]:hover {
+    background-color: #2b6cb0; /* Sötétebb kék */
+}
+
+a[href*="delete"] {
+    background-color: #e53e3e; /* Piros */
+    color: white;
+    text-decoration: none;
+}
+
+a[href*="delete"]:hover {
+    background-color: #c53030; /* Sötétebb piros */
+}
+
+/* Formák */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff; /* Fehér */
+    padding: 20px;
+    border: 1px solid #e2e8f0; /* Világos szürke */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-weight: bold;
+    color: #2c7a7b; /* Mély zöldeskék */
+}
+
+form input[type="text"], 
+form input[type="number"],
+form input[type="date"],
+form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #e2e8f0; /* Világos szürke */
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+form button {
+    align-self: center;
+    background-color: #38a169; /* Élénk zöld */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2f855a; /* Sötétebb zöld */
+}
+
+/* Mobilbarát kialakítás */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+/* Navigációs gombok */
+.nav-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin: 15px;
+}
+
+.nav-buttons .btn-back, 
+.nav-buttons .btn-home {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-buttons .btn-back {
+    background-color: #3182ce; /* Kék */
+}
+
+.nav-buttons .btn-back:hover {
+    background-color: #2b6cb0; /* Sötétebb kék */
+}
+
+.nav-buttons .btn-home {
+    background-color: #38a169; /* Zöld */
+}
+
+.nav-buttons .btn-home:hover {
+    background-color: #2f855a; /* Sötétebb zöld */
+}
