@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f9f5;
+}
+
+.hero {
+    background-color: #4caf50;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    background-color: rgba(26, 143, 0, 1);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.btn-custom {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #1b5e20;
+}
+
+table {
+    margin-top: 20px;
+}
+
+th {
+    background-color: #4caf50;
+    color: white;
+}
+
+.bg-light-green {
+    background-color: #e8f5e9;
+}
+
+
+
+
+
+
+
+
+  /* Alapértelmezett stílusok */
+  .navbar-nav .nav-link {
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+/* Hover effektus */
+.navbar-nav .nav-link:hover {
+    background-color: #e0e0e0; /* Sötétebb árnyalat */
+    color: #4caf50; /* Kiemelt szín */
+    transform: scale(1.1); /* Nagyobb méret */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Árnyék */
+}
+
+/* Aktív link kiemelése */
+.navbar-nav .nav-link.active {
+    background-color: #d4d4d4; /* Alap kiemelés */
+    font-weight: bold;
+    color: #2e7d32;
+}
+
