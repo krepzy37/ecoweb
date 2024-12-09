@@ -35,7 +35,7 @@ CREATE TABLE green_area (
     type_id INT NOT NULL,
     area_m2 FLOAT NOT NULL,
     creation_date DATE,
-    coordinates GEOMETRY,
+    coordinates VARCHAR(75) NULL,
     admin_id INT NOT NULL,
     location_zip_code_id INT NOT NULL,
     FOREIGN KEY (type_id) REFERENCES green_area_type(id),

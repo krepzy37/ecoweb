@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$dbname = 'greeneco';
-$user = 'root';
-$pass = ''; 
+$dbname = 'balazs';
+$user = 'balazs';
+$pass = 'Jeges37Tea!Polo'; 
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);
@@ -10,4 +10,4 @@ try {
 } catch (PDOException $e) {
     die("Adatbázis-kapcsolat sikertelen: " . $e->getMessage());
 }
-?>
+

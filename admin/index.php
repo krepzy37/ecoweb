@@ -15,6 +15,8 @@
         <li><a href="table.php?table=green_area">Green Areas</a></li>
         <li><a href="table.php?table=impacts">Impacts</a></li>
         <li><a href="table.php?table=green_roof_buildings">Green Roof Buildings</a></li>
+        <li><a href="../index.php">VISSZA A FŐOLDALRA</a></li>
     </ul>
+    
 </body>
 </html>
