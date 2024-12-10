@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        a{
+            text-decoration: none;
+            color: #2f855a;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Regisztráció</h2>
+    <form action="register.php" method="post">
+        <label for="username">Felhasználónév:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="password">Jelszó:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <label for="role">Szerep:</label>
+        <select id="role" name="role">
+            <option value="admin">Admin</option>
+            <option value="user">Felhasználó</option>
+            
+        </select>
+        <br><br>
+        <button type="submit">Regisztráció</button>
+        <a href="login_form.html">Bejelentkezés</a>
+    </form>
+</body>
+</html>

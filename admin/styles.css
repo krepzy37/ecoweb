@@ -106,10 +106,7 @@ a[href*="create"] {
     color: white;
     text-decoration: none;
 }
-#back2Site{
-    color: black;
-    text-decoration: none;
-}
+
 a[href*="create"]:hover {
     background-color: #2f855a; /* Sötétebb zöld */
 }
